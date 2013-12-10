@@ -8305,7 +8305,7 @@
     <instruction>
         <mnemonic>seto</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>T__________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 90</opc>
@@ -8316,7 +8316,7 @@
     <instruction>
         <mnemonic>setno</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>T__________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 91</opc>
@@ -8327,7 +8327,7 @@
     <instruction>
         <mnemonic>setb</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>_____T_____</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 92</opc>
@@ -8338,7 +8338,7 @@
     <instruction>
         <mnemonic>setae</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>_____T_____</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 93</opc>
@@ -8349,7 +8349,7 @@
     <instruction>
         <mnemonic>setz</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>__T________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 94</opc>
@@ -8360,7 +8360,7 @@
     <instruction>
         <mnemonic>setnz</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>__T________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 95</opc>
@@ -8371,7 +8371,7 @@
     <instruction>
         <mnemonic>setbe</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>__T__T_____</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 96</opc>
@@ -8382,7 +8382,7 @@
     <instruction>
         <mnemonic>seta</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>__T__T_____</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 97</opc>
@@ -8393,7 +8393,7 @@
     <instruction>
         <mnemonic>sets</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>_T_________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 98</opc>
@@ -8404,7 +8404,7 @@
     <instruction>
         <mnemonic>setns</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>_T_________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 99</opc>
@@ -8415,7 +8415,7 @@
     <instruction>
         <mnemonic>setp</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>____T______</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 9a</opc>
@@ -8426,7 +8426,7 @@
     <instruction>
         <mnemonic>setnp</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>____T______</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 9b</opc>
@@ -8437,7 +8437,7 @@
     <instruction>
         <mnemonic>setl</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>TT_________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 9c</opc>
@@ -8448,7 +8448,7 @@
     <instruction>
         <mnemonic>setge</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>TT_________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 9d</opc>
@@ -8459,7 +8459,7 @@
     <instruction>
         <mnemonic>setle</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>TTT________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 9e</opc>
@@ -8470,7 +8470,7 @@
     <instruction>
         <mnemonic>setg</mnemonic>
         <first_operand_access>W</first_operand_access>
-        <eflags>TTT_TT_____</eflags>
+        <eflags>TTT________</eflags>
         <def>
             <pfx>aso rexr rexx rexb</pfx>
             <opc>0f 9f</opc>
