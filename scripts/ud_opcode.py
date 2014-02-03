@@ -26,6 +26,13 @@
 import os
 import copy
 
+# Some compatibility stuff for supporting python 2.x as well as python 3.x
+def itemslist(dict):
+    try:
+        return dict.iteritems() # python 2.x
+    except AttributeError:
+        return list(dict.items()) # python 3.x
+
 class UdInsnDef:
     """An x86 instruction definition
     """
@@ -176,7 +183,7 @@ class UdOpcodeTable:
         return self._TableInfo[self._typ]['size']
 
     def entries(self):
-        return self._entries.iteritems()
+        return itemslist(self._entries)
 
     def numEntries(self):
         return len(self._entries.keys())
@@ -513,7 +520,7 @@ class UdOpcodeTables(object):
         sseimplicitRegDef = insnDef['implicitRegDef']
         sseopcodes        = insnDef['opcodes']
         # remove vex opcode extensions
-        sseopcexts  = dict([(e, v) for e, v in insnDef['opcexts'].iteritems()
+        sseopcexts  = dict([(e, v) for e, v in itemslist(insnDef['opcexts'])
                                   if not e.startswith('/vex')])
         # strip out avx operands, preserving relative ordering
         # of remaining operands
